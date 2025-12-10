@@ -1,0 +1,278 @@
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insight Magazine - Online News Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3d59, #3c5a77);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1e3d59;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #ffcc00;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Topics Section */
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .topic {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .topic:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .topic h3 {
+      margin-bottom: 10px;
+      color: #111;
+      font-size: 1.3rem;
+    }
+
+    .topic p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Featured Articles */
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .article {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .article:hover {
+      transform: scale(1.03);
+    }
+
+    .article h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .article p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Subscription Form */
+    .subscription {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .subscription label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .subscription input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.3s ease;
+    }
+
+    .subscription input:focus {
+      border: 1px solid #ffcc00;
+      outline: none;
+    }
+
+    .subscription button {
+      background: #1e3d59;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .subscription button:hover {
+      background: #ffcc00;
+      color: #111;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #1e3d59, #3c5a77);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Insight Magazine</h1>
+    <p>Your Daily Dose of Knowledge</p>
+    <nav>
+      <a href="#topics">Topics</a>
+      <a href="#articles">Featured</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <!-- Topics Section -->
+  <section id="topics">
+    <h2>Explore Topics</h2>
+    <div class="topics">
+      <div class="topic">
+        <h3>Technology</h3>
+        <p>Latest updates on AI, gadgets, and innovations.</p>
+      </div>
+      <div class="topic">
+        <h3>Health</h3>
+        <p>Wellness tips, medical breakthroughs, and fitness guides.</p>
+      </div>
+      <div class="topic">
+        <h3>Lifestyle</h3>
+        <p>Trends in fashion, travel, and everyday living.</p>
+      </div>
+      <div class="topic">
+        <h3>Finance</h3>
+        <p>Smart investing, saving strategies, and market insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Articles Section -->
+  <section id="articles">
+    <h2>Featured Articles</h2>
+    <div class="articles">
+      <div class="article">
+        <h3>The Rise of Artificial Intelligence</h3>
+        <p>AI is reshaping industries and daily life. Discover how it’s influencing the future.</p>
+      </div>
+      <div class="article">
+        <h3>Top 10 Fitness Hacks</h3>
+        <p>Simple lifestyle changes that can dramatically improve your health and energy levels.</p>
+      </div>
+      <div class="article">
+        <h3>Smart Money Moves</h3>
+        <p>Learn how to manage your finances effectively and prepare for long-term success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Section -->
+  <section id="subscribe">
+    <h2>Subscribe to Our Magazine</h2>
+    <div class="subscription">
+      <p>Stay updated with the latest articles and insights. Enter your email below:</p>
+      <form>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Insight Magazine | Knowledge at your fingertips</p>
+  </footer>
+
+</body>
+</html>
